@@ -23,3 +23,42 @@
 .whatsapp-float i {
     margin-top: 13px;
 }
+
+
+.logo-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.logo-track {
+    display: flex;
+    width: calc(200px * 8);
+    animation: scroll 20s linear infinite;
+}
+
+.logo-track img {
+    width: 180px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 30px;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.logo-track img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.logo-slider:hover .logo-track {
+    animation-play-state: paused;
+}
