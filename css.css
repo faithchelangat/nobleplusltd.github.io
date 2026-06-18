@@ -23,7 +23,16 @@
 .whatsapp-float i {
     margin-top: 13px;
 }
-
+.chat-text {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #25D366;
+    background: white;
+    padding: 3px 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
 
 .logo-slider {
     overflow: hidden;
